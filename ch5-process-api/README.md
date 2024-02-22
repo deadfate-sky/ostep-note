@@ -27,7 +27,7 @@
   - 執行成功的 `exec()` 不會 return，因此 `printf("this shouldn't print out");` 不會 print 出來。
 - "This section describes the exec family of functions, for executing a file as a process image. You can use these functions to make a child process execute a new program after it has been forked."
   - 另外根據 GNU C 語言手冊， `exec()` 可用於使 `fork()` 後的 child process 執行其他 program。  
-- C語言複習 []()
+- C語言複習 [觀念釐清](https://github.com/deadfate-sky/c-language-note/blob/main/pointer.md)
 
 ## 5.4 Why? Motivating the API
 - 為何需要把 "create a process" 這件事情，拆成由 `fork()` 和 `exec()` 兩個 system call 來完成？
